@@ -153,12 +153,42 @@ section p {
 }
 
 .start span {
+  font-size: 12px;
   margin-left: 0.3rem;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 700px) {
+  header {
+    padding: 28px 56px;
+    background-image: none;
+  }
+
+  header img {
+    height: 36px;
+  }
+
+  header div {
+    gap: 2rem;
+  }
+
+  .select select {
+    width: 7.5rem;
+    padding: 0.5rem 0;
+    padding-left: 1.375rem;
+  }
+
+  .select:before {
+    top: 0.625rem;
+    left: 0.5rem;
+  }
+
+  header .login {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
   section {
-    padding: 75px 200px;
+    padding: 150px 0;
   }
 
   section h2 {
@@ -187,8 +217,28 @@ section p {
     width: 40rem;
   }
 
-  .input-email button {
+  .input-email input {
+    width: 28.125rem;
+    height: 3.75rem;
+  }
+
+  .input-email label {
+    font-size: 1rem;
+    top: 1.5rem;
+  }
+
+  .start {
     margin-top: 0;
-    height: 100%;
+    height: 3.75rem;
+    flex: 1;
+    padding: 0 1.625rem;
+    font-size: 1.625rem;
+
+    border-radius: 0 3px 3px 0;
+    border-left: 1px solid #333;
+  }
+
+  .start span {
+    font-size: 20px;
   }
 }
